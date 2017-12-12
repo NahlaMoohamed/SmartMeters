@@ -1,0 +1,154 @@
+body{
+	border-radius: 0.5rem;
+	border:0.625rem double bisque;
+	margin: 0.5rem !important;
+	padding-bottom: 1rem;
+	background-color:rgba(255,243,196,0.2) ;
+	font-family: 'Tw Cen MT', sans-serif !important;
+}
+.vertical-align{
+	align-items: center;
+	display: flex;
+}
+:root{
+	font-size: 16px;
+}
+#logo-img{
+	margin-top: 1rem;
+}
+
+.color1{
+	color:#17ad88;
+}
+
+.color2{
+	color:#f67a40;
+}
+.margin-top{
+	margin-top: 2rem !important;
+}
+.home-background{
+	background-image: url('smart-meter-sketch3.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	margin: 0 auto;
+	background-size: contain;
+	height:30.6875rem;
+}
+.username{
+	padding-top: 0.8rem;
+}
+.website-name{
+	margin-left: 0.2rem;
+} 
+a>h4{
+	display: inline-block;
+}
+
+.navbar-nav>li:hover,.navbar-nav>li>a.active:hover{
+	background-color: transparent !important;
+}
+.navbar-nav>li>a{
+	font-size:1.5rem;
+}
+a > img:hover , a > h4:hover, .navbar-nav>li>a:hover{
+	background-color:rgba(255,243,196,0.4) !important;
+	cursor: pointer; 
+	border-radius: 2rem;
+}
+.log-in{
+	margin-top: 5rem !important;
+	margin-bottom: 5rem !important;
+}
+.about-container{
+	max-width: 800px; 
+	border:0.2rem double bisque;
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+}
+select{
+	color: white !important;
+	background-color: #17ad88;
+	padding: 0.5rem;
+	border-radius: 0.625rem;
+	font-size: 1rem !important;
+	font-weight: bold;
+}
+button > a> h4{
+	color: white !important;
+}
+button{
+	border-radius: 0.625rem;
+	color: white !important;
+	background-color: #17ad88;
+	font-size: 1rem !important;
+	font-weight: bold;
+}
+input[type=submit]{
+	padding: 0.3rem 0.6rem;
+	border-radius: 0.625rem;
+	color: white !important;
+	background-color: #17ad88;
+	font-size: 1rem !important;
+	font-weight: bold;
+}
+input[type=text], input[type=password]{
+	border-radius: 0.625rem;
+	margin-top: 0.2rem;
+	height: 30px;
+}
+.addUser{
+	margin: auto;
+	max-width: 480px;
+	border:0.625rem double bisque;
+	padding: 0.3rem;
+	border-radius:0.5rem;
+}
+.bill{
+	margin: auto;
+	max-width: 520px;
+	border:0.625rem double bisque;
+	padding: 0.3rem;
+	border-radius:0.5rem;
+}
+@media only screen and (max-width:45rem){
+	.mobile{
+		background-image: none;
+	}
+	.margin-top{
+		margin-top: 0rem;
+	}
+	.inputs-margin{
+		margin:0.2rem;
+	}
+	.log-in{
+		margin-top: 0 !important;
+	}
+} 
+#map-canvas{
+	width: 37.5rem;
+	height: 30rem;
+	margin:auto;
+}
+@media only screen and (max-device-width:480px)
+{
+	#map-canvas{
+		width: 20rem;
+		height: 15rem;
+	}
+}
+@media only screen and (max-device-width:360px)
+{
+	#map-canvas{
+		width: 18rem;
+		height: 15rem;
+	}
+}
+@media only screen and (max-device-width:320px)
+{
+	#map-canvas{
+		width: 15rem;
+		height: 15rem;
+	}
+}

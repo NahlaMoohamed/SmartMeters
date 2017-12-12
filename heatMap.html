@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<title>Heat Map</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="logoG.gif" sizes="196x196" />
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script>
+	var map;
+  	function initMap()
+	{
+    	map = new google.maps.Map(document.getElementById('map-canvas'), 
+        {
+            zoom: 13,
+            center: {lat: 30.0444, lng: 31.2357}
+          }); 
+    	var allData = [];
+    	allData.push({location:new google.maps.LatLng(30.0444, 31.2357) ,weight:900});
+    	allData.push({location:new google.maps.LatLng(30.0443, 31.2356) ,weight:1000});
+    	allData.push({location:new google.maps.LatLng(30.0442, 31.2355) ,weight:1100});
+    	allData.push({location:new google.maps.LatLng(30.0441, 31.2354) ,weight:1200});
+    	allData.push({location:new google.maps.LatLng(30.0440, 31.2353) ,weight:1300});
+    	allData.push({location:new google.maps.LatLng(30.0439, 31.2352) ,weight:1400});
+    	allData.push({location:new google.maps.LatLng(30.0438, 31.2351) ,weight:1500});
+    	allData.push({location:new google.maps.LatLng(30.0437, 31.2350) ,weight:1600});
+    	allData.push({location:new google.maps.LatLng(30.0420, 31.2330) ,weight:1600});
+    	allData.push({location:new google.maps.LatLng(30.0400, 31.2310) ,weight:1800});
+    	allData.push({location:new google.maps.LatLng(30.0130, 31.2430) ,weight:2000});
+    	heatMap = new google.maps.visualization.HeatmapLayer({
+                        data: allData,
+                        map: map
+                    });
+   }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAd8c4zuuLwjsUbm1Ht_d5N15YCVntj6uo&libraries=visualization&callback=initMap"
+    async defer></script>
+    </head>
+<body>
+	<header class="text-center">
+		<div class="container" >
+			<div class="navbar-header">
+				<img id="logo-img" src="logoG.gif" class="img-responsive center-block" alt="Logo image">
+			</div>
+			<div class="navbar-header website-name">
+				<strong><h2 class="color1">Smart Meters</h2></strong>
+				<h4 class="color1">DATA ANALYTICS</h4>
+			</div>
+			<div class="nav-list">
+				<div class="nav navbar-nav navbar-right">
+					<li><h3 class="color1 margin-top username">User name</h3></li>
+					<li><a href="managerHome.html" class="color1 margin-top">Home</a></li>
+					<li><a href="index.html" class="color1 margin-top">Log out</a></li>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="container text-center margin-top">
+		<div class="row center-block vertical-align">
+			<div class="col-md-2 inputs-margin">
+				<select value="filter_type">
+					<option selected="selected" value="Select Filter">Select Filter</option>
+					<option value="Apartment">Apartment</option>
+					<option value="Building">Building</option>
+					<option value="Area">Area</option>
+				</select>
+			</div>
+			<div class="col-md-2 inputs-margin">
+				<input type="text" name="filter_num">
+			</div>
+			<div class="col-md-2 inputs-margin">
+				<select value="filter_type">
+					<option selected="selected" value="time_filter">Time Filter</option>
+					<option value="Day">Day</option>
+					<option value="Month">Month</option>
+					<option value="Year">Year</option>
+				</select>
+			</div>
+			<div class="col-md-2 inputs-margin">
+				<input type="text" name="time">
+			</div>
+			<div class="col-md-2 inputs-margin">
+				<input type="submit" name="View Heat-Map">
+			</div>
+		</div>
+	</div>
+	<div class="margin-top center-block container">
+		<div id="map-canvas"></div>	
+	</div>
+<footer class="footer text-center margin-top" >
+  <div class="container">
+    <a href="about.html"><i class="fa fa-info fa-lg margin-top color2" aria-hidden="true"></i></a>
+  </div>
+</footer>
+
+</body>
+</html>
