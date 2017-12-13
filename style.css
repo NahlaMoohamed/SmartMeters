@@ -131,17 +131,39 @@ input[type=text], input[type=password]{
 	height: 30rem;
 	margin:auto;
 }
-@media only screen and (max-device-width:480px)
+@media only screen and (max-width: 480px)
 {
 	#map-canvas{
 		width: 20rem;
 		height: 15rem;
 	}
 }
+@media only screen and (max-device-width:480px) and (max-width: 480px)
+{
+	#map-canvas{
+		width: 20rem;
+		height: 15rem;
+	}
+}
+@media only screen and (max-width:360px)
+{
+	#map-canvas{
+		width: 18rem;
+		height: 15rem;
+	}
+}
+
 @media only screen and (max-device-width:360px)
 {
 	#map-canvas{
 		width: 18rem;
+		height: 15rem;
+	}
+}
+@media only screen and (max-width:320px)
+{
+	#map-canvas{
+		width: 15rem;
 		height: 15rem;
 	}
 }
