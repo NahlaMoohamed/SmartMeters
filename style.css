@@ -4,7 +4,7 @@ body{
 	margin: 0.5rem !important;
 	padding-bottom: 1rem;
 	background-color:rgba(255,243,196,0.2) ;
-	font-family: 'Tw Cen MT', sans-serif !important;
+	font-family: 'Kadwa' !important;
 }
 .vertical-align{
 	align-items: center;
@@ -113,7 +113,7 @@ input[type=text], input[type=password]{
 	border-radius:0.5rem;
 }
 @media only screen and (max-width:45rem){
-	.mobile{
+	.mobile1{
 		background-image: none;
 	}
 	.margin-top{
@@ -173,4 +173,10 @@ input[type=text], input[type=password]{
 		width: 15rem;
 		height: 15rem;
 	}
+}
+.navbar-toggle{
+	background-color:#f67a40 !important;
+}
+.icon-bar{
+	background-color:white !important;
 }
